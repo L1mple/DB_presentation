@@ -1,1 +1,1 @@
-SELECT * FROM books WHERE id = @book_id
+SELECT * FROM books WHERE id = @book_id:int

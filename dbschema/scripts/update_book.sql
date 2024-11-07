@@ -1,3 +1,3 @@
 UPDATE books 
-SET title = @title, year = @year
-WHERE id = @id
+SET title = @title:str, year = @year:int
+WHERE id = @id:int

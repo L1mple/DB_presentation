@@ -1,7 +1,7 @@
 services:
-  postgresql:
+  postgre:
     image: postgres:14.4
-    container_name: postgresql
+    container_name: postgre
     restart: "no"
     environment:
       POSTGRES_USER: user
@@ -10,9 +10,9 @@ services:
     ports:
       - 5432:5432
 
-  adminer:
+  postgre_adminer:
     image: adminer:4.8.1
-    container_name: postgresql_adminer
+    container_name: postgre_adminer
     restart: "no"
     environment:
       ADMINER_DEFAULT_SERVER: postgresql

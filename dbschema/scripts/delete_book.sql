@@ -1,1 +1,1 @@
-DELETE FROM books WHERE id = @book_id
+DELETE FROM books WHERE id = @book_id:int

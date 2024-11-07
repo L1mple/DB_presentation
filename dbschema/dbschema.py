@@ -4,7 +4,7 @@ from fastdto.core.dsl.schema.column import Column
 
 
 class Books(Base):
-    """User's table."""
+    """Book's table."""
 
     __tablename__ = "books"
 
