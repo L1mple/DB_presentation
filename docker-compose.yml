@@ -1,0 +1,21 @@
+services:
+  postgre:
+    image: postgres:14.4
+    container_name: postgre
+    restart: "no"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: test
+    ports:
+      - 5432:5432
+
+  postgre_adminer:
+    image: adminer:4.8.1
+    container_name: postgre_adminer
+    restart: "no"
+    environment:
+      ADMINER_DEFAULT_SERVER: postgresql
+      ADMINER_DESIGN: brade
+    ports:
+      - 10000:8080
